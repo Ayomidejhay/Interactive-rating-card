@@ -1,0 +1,119 @@
+*{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+body{
+ font-size: 1rem;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background-color: hsl(216, 12%, 8%);
+ font-family:'Overpass', sans-serif;
+ font-weight: 400;
+ text-align: center;
+ color: white;
+}
+main{
+ position: relative;
+}
+h2{
+ font-size: 1.5rem;
+ color:hsl(0, 0%, 100%) ;
+ padding-bottom: 15px;
+ font-weight: 700;
+}
+p{
+ color:hsl(217, 12%, 63%) ;
+ padding-bottom: 20px;
+}
+.rating{
+ max-width: 350px;
+ max-height: 400px;
+ background-color:hsl(213, 19%, 18%) ;
+ padding: 30px 40px;
+ border-radius: 10px;
+ position: absolute;
+}
+.rating.rates{
+ display: none;
+}
+.rating > img{
+ background-color:hsl(213, 19%, 25%) ;
+ width: 50px;
+ padding: 10px;
+ border-radius: 50px;
+ margin-bottom: 20px;
+ 
+}
+.rate{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 20px;
+}
+.circle{
+ width: 30px;
+ height: 30px;
+ border-radius: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: hsl(213, 19%, 25%) ;
+ color: hsl(217, 12%, 63%) ;
+ -webkit-transition: 0.1s ease-in;
+}
+.circle.active{
+ background-color:hsl(216, 12%, 54%) ;
+ color: hsl(0, 0%, 100%);
+}
+.rate > button{
+ border: none;
+ background-color: hsl(213, 19%, 25%) ;
+}
+.rate > button:hover{
+ border: none;
+}
+.rating > button{
+ width: 100%;
+ color: hsl(0, 0%, 100%) ;
+ background-color:hsl(25, 97%, 53%) ;
+ height: 40px;
+ border: 1px solid hsl(25, 97%, 53%);
+ border-radius: 50px;
+ text-transform: uppercase;
+ letter-spacing: 0.1rem;
+}
+button:hover{
+ color:hsl(25, 97%, 53%) ;
+ background-color: hsl(0, 0%, 100%);
+ border: 1px solid hsl(0, 0%, 100%);
+ cursor:pointer ;
+}
+.circle:hover{
+ cursor: pointer;
+ background-color:hsl(25, 97%, 53%) ;
+}
+.appreciation{
+ max-width: 350px;
+ max-height: 400px;
+ background-color:hsl(213, 19%, 18%) ;
+ padding: 30px 40px;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.appreciation :nth-child(2){
+ background-color:hsl(213, 19%, 25%) ;
+ padding: 10px 25px;
+ border-radius: 50px;
+ color:hsl(25, 97%, 53%) ;
+ margin: 20px 0;
+}
+footer{
+ position: fixed;
+ margin-top: 500px;
+}
